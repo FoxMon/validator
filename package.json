@@ -1,0 +1,24 @@
+{
+  "name": "validator",
+  "version": "1.0.0",
+  "description": "ts-validotr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoxMon/validator.git"
+  },
+  "author": "FoxMon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FoxMon/validator/issues"
+  },
+  "homepage": "https://github.com/FoxMon/validator#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
+  }
+}
