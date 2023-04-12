@@ -1,4 +1,4 @@
-import { isArray, isString } from "./is";
+import { isArray, isFunction, isString } from "./index";
 
 /**
  * Assert error function
@@ -27,5 +27,13 @@ export function assertArray(
 ): asserts condition is Array<unknown> {
   if (!isArray(condition)) {
     assertionError("Not a Array");
+  }
+}
+
+export function assertFunction(
+  condition: unknown
+): asserts condition is Function {
+  if (!isFunction(condition)) {
+    assertionError("Not a Function");
   }
 }
