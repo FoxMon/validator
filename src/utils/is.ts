@@ -18,7 +18,7 @@ export function isString(target: unknown): boolean {
 
 /**
  * Check target is number
- * @param {number} target
+ * @param {unknown} target
  * @returns {boolean}
  */
 export function isNumber(target: unknown): boolean {
@@ -27,9 +27,18 @@ export function isNumber(target: unknown): boolean {
 
 /**
  * Check target is boolean
- * @param {number} target
+ * @param {unknown} target
  * @returns {boolean}
  */
 export function isBoolean(target: unknown): boolean {
   return typeof target === "boolean";
+}
+
+/**
+ * Check target is Function
+ * @param {unknown} target
+ * @returns {boolean}
+ */
+export function isFunction(target: unknown): boolean {
+  return target instanceof Function;
 }
