@@ -13,8 +13,15 @@ export namespace CheckType {
      */
     decoratorName: string;
     /**
+     * Apply decorator type
+     * Property decorator: property
+     * Method decorator: method
+     * Class decorator: class
+     */
+    applyType: string;
+    /**
      * Function option
      */
-    func: DecoratorType.DecoratorFunction;
+    decoratorFunc: DecoratorType.DecoratorFunction;
   }
 }
