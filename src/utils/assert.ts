@@ -9,6 +9,16 @@ function assertionError(msg?: string): void {
 }
 
 /**
+ * Assert
+ * @param {unknown} condition
+ */
+export function assert(condition: unknown): asserts condition {
+  if (!condition) {
+    assertionError("Assert fail");
+  }
+}
+
+/**
  * Assert condition is string
  * @param {unknown} condition
  */
