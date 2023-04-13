@@ -42,3 +42,21 @@ export function isBoolean(target: unknown): boolean {
 export function isFunction(target: unknown): boolean {
   return target instanceof Function;
 }
+
+/**
+ * Check target is null
+ * @param {unknown} target
+ * @returns {boolean}
+ */
+export function isNull(target: unknown): boolean {
+  return target === null;
+}
+
+/**
+ * Check target is undefined
+ * @param {unknown} target
+ * @returns {boolean}
+ */
+export function isUndefined(target: unknown): boolean {
+  return target === undefined;
+}
