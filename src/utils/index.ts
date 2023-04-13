@@ -1,5 +1,14 @@
-import { isArray, isString, isNumber, isBoolean, isFunction } from "./is";
-import { assertString, assertArray, assertFunction } from "./assert";
+import {
+  isArray,
+  isString,
+  isNumber,
+  isBoolean,
+  isFunction,
+  isNull,
+  isUndefined,
+} from "./is";
+import { match } from "./func";
+import { assert, assertString, assertArray, assertFunction } from "./assert";
 
 export {
   isArray,
@@ -7,6 +16,10 @@ export {
   isNumber,
   isBoolean,
   isFunction,
+  isNull,
+  isUndefined,
+  match,
+  assert,
   assertString,
   assertArray,
   assertFunction,
