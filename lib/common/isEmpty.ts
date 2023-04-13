@@ -1,7 +1,9 @@
+import { applyDecorator } from "../core";
+import { isNull, isUndefined } from "../../src/utils";
 import { CommonType, DecoratorType } from "../../src/types";
-import { registDecorator } from "../core";
 
 const DECORATOR_NAME: string = "IS_EMPTY";
+const DECORATOR_APPLY_TYPE: string = "property";
 
 /**
  * Check target is empty
@@ -9,19 +11,25 @@ const DECORATOR_NAME: string = "IS_EMPTY";
  * @returns {boolean}
  */
 function _isEmpty<T extends CommonType.CommonVariable>(target: T): boolean {
-  return target === "" || target === null || target === undefined;
+  if (target === "" || isNull(target) || isUndefined(target)) {
+    return false;
+  }
+  return true;
 }
 
 /**
  * Regist isEmpty decorator
  * @param {DecoratorType.DecoratorOptions} decoratorOptions
  */
-export function isEmpty(decoratorOptions?: DecoratorType.DecoratorOptions) {
+export function isEmpty(
+  decoratorOptions?: DecoratorType.DecoratorOptions
+): Function {
   // Regist decorator
-  registDecorator(
+  return applyDecorator(
     {
       decoratorName: DECORATOR_NAME,
-      func: _isEmpty,
+      applyType: DECORATOR_APPLY_TYPE,
+      decoratorFunc: _isEmpty,
     },
     decoratorOptions
   );
