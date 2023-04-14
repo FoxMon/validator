@@ -20,11 +20,12 @@ function _isEmpty<T extends CommonType.CommonVariable>(target: T): boolean {
 /**
  * Regist isEmpty decorator
  * @param {DecoratorType.DecoratorOptions} decoratorOptions
+ * @return {Function}
  */
 export function isEmpty(
   decoratorOptions?: DecoratorType.DecoratorOptions
 ): Function {
-  // Regist decorator
+  // Regist is empty decorator
   return applyDecorator(
     {
       decoratorName: DECORATOR_NAME,
