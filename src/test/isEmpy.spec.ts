@@ -11,9 +11,11 @@ describe("IS EMPTY Decorator", () => {
         this.str = str;
       }
     }
+
     // Pass
     new A("a");
-    // It must be fail
+
+    // It must fail
     // new A("");
   });
 });
