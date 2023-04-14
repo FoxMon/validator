@@ -1,3 +1,5 @@
+import { CommonType } from "./common.type";
+
 /**
  * Decorator type package
  */
@@ -27,5 +29,9 @@ export namespace DecoratorType {
      * If decorator target is array, it must be valid
      */
     every?: boolean;
+    /**
+     * Target value
+     */
+    value?: CommonType.CommonVariable;
   }
 }
