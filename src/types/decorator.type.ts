@@ -12,7 +12,7 @@ export namespace DecoratorType {
    * Define DecoratorFunction type
    * Decorator function type
    */
-  export type DecoratorFunction = (target: any) => boolean;
+  export type DecoratorFunction = (target: any, value?: any) => boolean;
 
   /**
    * Define DecoratorOptions type
