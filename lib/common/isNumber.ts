@@ -25,6 +25,7 @@ function _isNumber<T extends CommonType.CommonVariable>(target: T): boolean {
 export function isNumber(
   decoratorOptions?: DecoratorType.DecoratorOptions
 ): Function {
+  // Regist is number decorator
   return applyDecorator(
     {
       decoratorName: DECORATOR_NAME,
