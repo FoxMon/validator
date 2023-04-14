@@ -6,14 +6,20 @@ class Person {
   @isEmpty()
   name: string;
 
-  @isEmpty()
+  // age number check
+  @isNumber()
   age: number;
 
-  constructor(name: string, age: number) {
+  // address string check
+  @isString()
+  addr: string;
+
+  constructor(name: string, age: number, addr: string) {
     this.name = name;
     this.age = age;
+    this.addr = addr;
   }
 }
 
-const person: Person = new Person("Fox", 10);
+const person: Person = new Person("Fox", 10, "Seoul");
 ```
