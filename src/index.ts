@@ -1,3 +1,3 @@
-import { isEmpty } from "../lib/common";
+import { isEmpty, isNumber, isString } from "../lib/common";
 
-export { isEmpty };
+export { isEmpty, isNumber, isString };
