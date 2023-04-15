@@ -13,7 +13,6 @@ export function applyDecorator(
   options: CheckType.Options,
   decoratorOptions?: DecoratorType.DecoratorOptions
 ): Function {
-  // TODO: decoratorOptions
   /**
    * The func must be Function type.
    */
@@ -25,11 +24,12 @@ export function applyDecorator(
   )
     .on(
       (type) => type === "property",
-      () => registPropertyDecorator(originFunc)
+      () => registPropertyDecorator(originFunc, decoratorOptions)
     )
     .otherwise(() => null);
   /**
    * The matchedFunction must be function.
+   * If the matchedFunction is null, it must human error.
    * Type assert and return this function.
    */
   assertFunction(matchedFunction);
