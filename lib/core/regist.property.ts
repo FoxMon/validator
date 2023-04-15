@@ -7,7 +7,8 @@ import { assert } from "../../src/utils";
  * @returns {Function}
  */
 export function registPropertyDecorator(
-  originFunc: DecoratorType.DecoratorFunction
+  originFunc: DecoratorType.DecoratorFunction,
+  options?: DecoratorType.DecoratorOptions
 ): Function {
   return function (target: Object, targetName: string) {
     let _value: unknown;
@@ -19,7 +20,19 @@ export function registPropertyDecorator(
         return _value;
       },
       set: function (value: unknown) {
-        const isValid: boolean = originFunc(value);
+        const isValid: boolean = (() => {
+          /**
+           * The value of options are the value received
+           * from the paremeter of the decorator.
+           */
+          if (options) {
+            return options.value
+              ? originFunc(value, options.value)
+              : originFunc(value);
+          } else {
+            return originFunc(value);
+          }
+        })();
         assert(isValid);
         _value = value;
       },
