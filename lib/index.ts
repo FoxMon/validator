@@ -1,3 +1,3 @@
-import { isEmpty, isNumber, isString, isContain } from "./common";
+import { isEmpty, isNumber, isString, isContain, isBoolean } from "./common";
 
-export { isEmpty, isNumber, isString, isContain };
+export { isEmpty, isNumber, isString, isContain, isBoolean };
