@@ -1,3 +1,10 @@
-import { isEmpty, isNumber } from "./lib";
-
-export { isEmpty, isNumber };
+export {
+  isEmpty,
+  isNumber,
+  isString,
+  isContain,
+  isBoolean,
+  isUpper,
+  isLower,
+  isDuplicate,
+} from "./src/index";
