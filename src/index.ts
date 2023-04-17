@@ -1,9 +1,21 @@
 import {
+  isUpper,
+  isLower,
   isEmpty,
   isNumber,
   isString,
   isContain,
   isBoolean,
-} from "../lib/common";
+  isDuplicate,
+} from "../lib";
 
-export { isEmpty, isNumber, isString, isContain, isBoolean };
+export {
+  isEmpty,
+  isNumber,
+  isString,
+  isContain,
+  isBoolean,
+  isUpper,
+  isLower,
+  isDuplicate,
+};
