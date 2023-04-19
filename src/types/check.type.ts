@@ -12,6 +12,7 @@ export namespace CheckType {
      * Name option
      */
     decoratorName: string;
+
     /**
      * Apply decorator type
      * Property decorator: property
@@ -19,9 +20,12 @@ export namespace CheckType {
      * Class decorator: class
      */
     applyType: string;
+
     /**
      * Function option
      */
-    decoratorFunc: DecoratorType.DecoratorFunction;
+    decoratorFunc:
+      | DecoratorType.DecoratorFunction
+      | DecoratorType.DecoratorMethodFunction;
   }
 }
