@@ -24,6 +24,13 @@ class Person {
     this.addr = addr;
     this.friends: friends;
   }
+
+  // setTimeout 1s, 1000ms
+  // study
+  @delayFunction({ value: 1000 })
+  study() {
+    console.log("Study");
+  }
 }
 
 const person: Person = new Person("Fox", 10, "Seoul", ["FoxMon"]);
