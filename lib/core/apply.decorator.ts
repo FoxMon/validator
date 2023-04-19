@@ -1,4 +1,5 @@
 import { registPropertyDecorator } from "./regist.property";
+import { registMethodDecorator } from "./regist.method";
 import { CheckType, DecoratorType } from "../../src/types";
 import { assertFunction } from "../../src/utils";
 import { match } from "../../src/utils";
@@ -6,8 +7,9 @@ import { match } from "../../src/utils";
 /**
  * Regist decorator.
  * If decorator options exist, it must be check all of options.
- * @param options
- * @param decoratorOptions
+ * @param {CheckType.Options} options
+ * @param {DecoratorType.DecoratorOptions} decoratorOptions
+ * @returns {Function}
  */
 export function applyDecorator(
   options: CheckType.Options,
@@ -23,8 +25,20 @@ export function applyDecorator(
     decoratorType
   )
     .on(
-      (type) => type === "property",
-      () => registPropertyDecorator(originFunc, decoratorOptions)
+      (type: string) => type === "property",
+      () =>
+        registPropertyDecorator(
+          originFunc as DecoratorType.DecoratorFunction,
+          decoratorOptions
+        )
+    )
+    .on(
+      (type: string) => type === "method",
+      () =>
+        registMethodDecorator(
+          originFunc as DecoratorType.DecoratorMethodFunction,
+          decoratorOptions
+        )
     )
     .otherwise(() => null);
   /**
