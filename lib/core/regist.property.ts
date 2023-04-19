@@ -23,7 +23,7 @@ export function registPropertyDecorator(
         const isValid: boolean = (() => {
           /**
            * The value of options are the value received
-           * from the paremeter of the decorator.
+           * from the parameter of the decorator.
            */
           if (options) {
             return options.value
