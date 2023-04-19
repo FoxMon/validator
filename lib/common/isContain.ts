@@ -27,6 +27,7 @@ function _isContain<T extends CommonType.CommonVariable>(
 export function isContain(
   decoratorOptions?: DecoratorType.DecoratorOptions
 ): Function {
+  // Regist is contain decorator
   return applyDecorator(
     {
       decoratorName: DECORATOR_NAME,
