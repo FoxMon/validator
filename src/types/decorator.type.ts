@@ -38,10 +38,12 @@ export namespace DecoratorType {
      * If decorator function failed
      */
     msg?: string;
+
     /**
      * If decorator target is array, it must be valid
      */
     every?: boolean;
+
     /**
      * Target value
      */
