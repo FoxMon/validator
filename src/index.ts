@@ -7,6 +7,7 @@ import {
   isContain,
   isBoolean,
   isDuplicate,
+  delayFunction,
 } from "../lib";
 
 export {
@@ -18,4 +19,5 @@ export {
   isUpper,
   isLower,
   isDuplicate,
+  delayFunction,
 };
