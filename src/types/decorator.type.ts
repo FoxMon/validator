@@ -17,6 +17,19 @@ export namespace DecoratorType {
   export type DecoratorFunction = (target: any, value?: any) => boolean;
 
   /**
+   * Define DecoratorMethodFunction type
+   * The param is define or not
+   */
+  export type DecoratorMethodFunction = <
+    T extends CommonType.CommonVariable,
+    E extends DecoratorBuilder,
+    V extends CommonType.CommonMethodReturn
+  >(
+    params?: T,
+    func?: E
+  ) => V;
+
+  /**
    * Define DecoratorOptions type
    */
   export interface DecoratorOptions {
