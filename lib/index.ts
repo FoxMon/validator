@@ -1,6 +1,7 @@
 import { isEmpty, isNumber, isString, isContain, isBoolean } from "./common";
 import { isUpper, isLower } from "./string";
 import { isDuplicate } from "./array";
+import { delayFunction } from "./method";
 
 export {
   isEmpty,
@@ -11,4 +12,5 @@ export {
   isUpper,
   isLower,
   isDuplicate,
+  delayFunction,
 };
