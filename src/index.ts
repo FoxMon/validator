@@ -1,11 +1,12 @@
 import {
-  isUpper,
-  isLower,
   isEmpty,
   isNumber,
   isString,
   isContain,
   isBoolean,
+  isArray,
+  isUpper,
+  isLower,
   isDuplicate,
   delayFunction,
 } from "../lib";
@@ -16,6 +17,7 @@ export {
   isString,
   isContain,
   isBoolean,
+  isArray,
   isUpper,
   isLower,
   isDuplicate,
