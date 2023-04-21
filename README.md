@@ -1,5 +1,37 @@
 # TypeScript Validator
 
+Property decorator & Function decorator
+
+---
+
+# Author
+
+| Author | Version |
+| :----: | :-----: |
+| FoxMon |  1.0.0  |
+
+---
+
+> TypeScript
+>
+> ES2020
+
+---
+
+## Decorator options
+
+---
+
+|  name   |      msg      |           every            |   value   |
+| :-----: | :-----------: | :------------------------: | :-------: |
+| Not yet | Error message | Every element must be true | Parameter |
+
+---
+
+## Example
+
+---
+
 ```typescript
 class Person {
   // name empty check
@@ -35,3 +67,5 @@ class Person {
 
 const person: Person = new Person("Fox", 10, "Seoul", ["FoxMon"]);
 ```
+
+---
