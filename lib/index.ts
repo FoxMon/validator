@@ -6,7 +6,7 @@ import {
   isBoolean,
   isArray,
 } from "./common";
-import { isUpper, isLower } from "./string";
+import { isUpper, isLower, isInclude } from "./string";
 import { isDuplicate } from "./array";
 import { delayFunction } from "./method";
 
@@ -19,6 +19,7 @@ export {
   isArray,
   isUpper,
   isLower,
+  isInclude,
   isDuplicate,
   delayFunction,
 };
