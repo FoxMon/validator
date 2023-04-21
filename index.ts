@@ -7,6 +7,7 @@ export {
   isArray,
   isUpper,
   isLower,
+  isInclude,
   isDuplicate,
   delayFunction,
 } from "./src/index";

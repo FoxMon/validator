@@ -7,6 +7,7 @@ import {
   isArray,
   isUpper,
   isLower,
+  isInclude,
   isDuplicate,
   delayFunction,
 } from "../lib";
@@ -20,6 +21,7 @@ export {
   isArray,
   isUpper,
   isLower,
+  isInclude,
   isDuplicate,
   delayFunction,
 };
