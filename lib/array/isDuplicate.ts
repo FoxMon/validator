@@ -7,7 +7,7 @@ const DECORATOR_APPLY_TYPE: string = "property";
 
 /**
  * Check target is duplicate
- * @param target
+ * @param {CommonType.CommonVariable[]} target
  * @return {boolean}
  */
 function _isDuplicate<T extends CommonType.CommonVariable>(
