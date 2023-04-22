@@ -33,7 +33,8 @@ export function registPropertyDecorator(
             return originFunc(value);
           }
         })();
-        assert(isValid);
+        const errorMsg: string = options?.msg ? options?.msg : "";
+        assert(isValid, errorMsg);
         _value = value;
       },
     });
