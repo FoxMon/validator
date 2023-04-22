@@ -46,6 +46,7 @@ export function applyDecorator(
    * If the matchedFunction is null, it must human error.
    * Type assert and return this function.
    */
-  assertFunction(matchedFunction);
+  const msg: string = decoratorOptions?.msg ? decoratorOptions?.msg : "";
+  assertFunction(matchedFunction, msg);
   return matchedFunction;
 }
