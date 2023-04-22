@@ -12,6 +12,10 @@ Property decorator & Function decorator
 
 ---
 
+## Stack
+
+---
+
 > TypeScript
 >
 > ES2020
