@@ -12,9 +12,9 @@ function assertionError(msg?: string): void {
  * Assert
  * @param {unknown} condition
  */
-export function assert(condition: unknown): asserts condition {
+export function assert(condition: unknown, msg?: string): asserts condition {
   if (!condition) {
-    assertionError("Assert fail");
+    assertionError(`Assert fail: ${msg}`);
   }
 }
 
@@ -41,9 +41,10 @@ export function assertArray(
 }
 
 export function assertFunction(
-  condition: unknown
+  condition: unknown,
+  msg?: string
 ): asserts condition is Function {
   if (!isFunction(condition)) {
-    assertionError("Not a Function");
+    assertionError(msg ? msg : "Not a Function");
   }
 }
