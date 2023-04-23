@@ -1,3 +1,4 @@
 import { isDuplicate } from "./isDuplicate";
+import { isIn } from "./isIn";
 
-export { isDuplicate };
+export { isDuplicate, isIn };
