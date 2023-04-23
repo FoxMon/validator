@@ -9,5 +9,6 @@ export {
   isLower,
   isInclude,
   isDuplicate,
+  isIn,
   delayFunction,
 } from "./src/index";

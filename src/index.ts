@@ -9,6 +9,7 @@ import {
   isLower,
   isInclude,
   isDuplicate,
+  isIn,
   delayFunction,
 } from "../lib";
 
@@ -23,5 +24,6 @@ export {
   isLower,
   isInclude,
   isDuplicate,
+  isIn,
   delayFunction,
 };
