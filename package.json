@@ -1,7 +1,7 @@
 {
-  "name": "validator",
+  "name": "@foxmon/validator",
   "version": "1.0.0",
-  "description": "ts-validotr",
+  "description": "TypeScript Validate Decorator",
   "main": "index.js",
   "scripts": {
     "test": "vitest"
