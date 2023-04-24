@@ -26,9 +26,15 @@ Property decorator & Function decorator
 
 ---
 
-|  name   |      msg      |           every            |   value   |
-| :-----: | :-----------: | :------------------------: | :-------: |
-| Not yet | Error message | Every element must be true | Parameter |
+|      msg      |           every            |   value   |
+| :-----------: | :------------------------: | :-------: |
+| Error message | Every element must be true | Parameter |
+
+> msg: Error message parameter
+>
+> every: Every element must be true
+>
+> value: Decorator parameter value
 
 ---
 
