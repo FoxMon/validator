@@ -26,7 +26,7 @@ Property decorator & Function decorator
 
 ---
 
-|      msg      |           every            |   value   |
+|      msg      |     every ( Not yet )      |   value   |
 | :-----------: | :------------------------: | :-------: |
 | Error message | Every element must be true | Parameter |
 
