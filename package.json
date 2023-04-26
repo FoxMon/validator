@@ -18,6 +18,7 @@
   "homepage": "https://github.com/FoxMon/validator#readme",
   "devDependencies": {
     "ts-node": "^10.9.1",
+    "@types/node": "^18.11.18",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4",
     "vitest": "^0.30.1"
