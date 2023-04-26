@@ -1,29 +1,3 @@
-import {
-  isEmpty,
-  isNumber,
-  isString,
-  isContain,
-  isBoolean,
-  isArray,
-  isUpper,
-  isLower,
-  isInclude,
-  isDuplicate,
-  isIn,
-  delayFunction,
-} from "../lib";
+import * as validator from "../lib";
 
-export {
-  isEmpty,
-  isNumber,
-  isString,
-  isContain,
-  isBoolean,
-  isArray,
-  isUpper,
-  isLower,
-  isInclude,
-  isDuplicate,
-  isIn,
-  delayFunction,
-};
+export default validator;
