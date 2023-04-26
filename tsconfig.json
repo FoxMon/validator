@@ -12,6 +12,5 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true
-  },
-  "exclude": ["node_modules", "*/*.spec.ts"]
+  }
 }
