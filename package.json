@@ -1,6 +1,6 @@
 {
   "name": "@foxmon/validator",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "TypeScript Validate Decorator",
   "type": "module",
   "main": "index.js",
