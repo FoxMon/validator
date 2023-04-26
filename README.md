@@ -2,15 +2,11 @@
 
 Property decorator & Function decorator
 
----
-
 # Author
 
 | Author | Version |
 | :----: | :-----: |
 | FoxMon |  1.0.0  |
-
----
 
 ## Stack
 
@@ -20,11 +16,7 @@ Property decorator & Function decorator
 >
 > ES2020
 
----
-
 ## Decorator options
-
----
 
 |      msg      |     every ( Not yet )      |   value   |
 | :-----------: | :------------------------: | :-------: |
@@ -36,11 +28,7 @@ Property decorator & Function decorator
 >
 > value: Decorator parameter value
 
----
-
 ## Example
-
----
 
 ```typescript
 class Person {
@@ -77,5 +65,3 @@ class Person {
 
 const person: Person = new Person("Fox", 10, "Seoul", ["FoxMon"]);
 ```
-
----
