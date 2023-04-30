@@ -2,7 +2,7 @@ import { CommonType, DecoratorType } from "../../src/types";
 import { isString as isStringCheck } from "../../src/utils";
 import { applyDecorator } from "../core";
 
-const DECORATOR_NAME: string = "IS_NUMBER";
+const DECORATOR_NAME: string = "IS_STRING";
 const DECORATOR_APPLY_TYPE: string = "property";
 
 /**
