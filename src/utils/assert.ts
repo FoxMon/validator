@@ -45,7 +45,8 @@ export function assertArray(
  * @param {unknown} condition
  */
 export function assertFunction(
-  condition: unknown
+  condition: unknown,
+  msg?: string
 ): asserts condition is Function {
   if (!isFunction(condition)) {
     assertionError("Not a Function");
